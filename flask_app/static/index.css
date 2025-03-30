@@ -64,7 +64,7 @@ header {
 
 /* Navigation Button Styling */
 .navbar-buttons-list li a {
-    color: black;
+    color: #555;
     text-decoration: none;
     padding: 8px 12px;
     font-size: 23px;
@@ -138,6 +138,7 @@ main {
     font-family: "Anton", sans-serif;
     font-size: 14px;
     margin: 0;
+    color: #555;
 }
 
 .page-title-container {
@@ -150,7 +151,7 @@ main {
     width: 100%; /* Use 100% width to take up all available space */
     max-width: 1200px; /* Optional: Set a max width to avoid large screens stretching too far */
     height: 100px;
-    background-color: black;
+    background-color: #555;
     display: flex;
     justify-content: center;
     align-items: center;
