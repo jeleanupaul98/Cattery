@@ -290,3 +290,161 @@ main {
         font-size: 15px;  /* Adjust font size further for very small screens */
     }
 }
+
+
+/* Gallery Section Styles */
+.home-section.gallery {
+    padding: 60px 20px 40px; /* Add more space at the top and bottom */
+    background-color: #f8f8f8; /* Light background color */
+    text-align: center; /* Center-align the title */
+}
+
+.home-section.gallery h2 {
+    font-size: 2.5rem; /* Larger text for the section title */
+    margin-bottom: 30px; /* Add space below the title */
+    margin-left: 20px; /* Add some space to the left */
+    margin-right: 20px; /* Add some space to the right */
+    color: #333; /* Dark color for the text */
+    font-family: 'Host Grotesk', sans-serif; /* Use a clean, bold font */
+    font-weight: bold;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Flexible grid layout */
+    gap: 20px; /* Space between images */
+    padding: 0 20px; /* Add padding to the left and right of the grid */
+}
+
+.gallery-grid img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow to make images pop */
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+}
+
+/* Responsive Image Gallery */
+@media (max-width: 768px) {
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* More compact grid for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr; /* Single column on very small screens */
+    }
+}
+
+
+/* Call to Action Section Styles */
+.home-section.call-to-action {
+    background-color: #f2f2f2; /* Bright, attention-grabbing color */
+    color: #fff; /* White text for contrast */
+    padding: 60px 20px 40px; /* Add more space at the top and bottom */
+    text-align: center; /* Center-align the content */
+    border-radius: 10px; /* Round the corners slightly */
+    margin-top: 30px; /* Space above the CTA */
+}
+
+.home-section.call-to-action h2 {
+    font-size: 2.5rem; /* Larger text to grab attention */
+    font-family: 'Host Grotesk', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px; /* Add space below the title */
+    color: #333; /* Dark color for the text */
+    width: 100%; /* Ensure it takes up full width */
+    text-align: center; /* Center-align the title */
+}
+
+.home-section.call-to-action .cta-button {
+    background-color: #2d2d2d; /* Dark background color for buttons */
+    color: #fff; /* White text for visibility */
+    padding: 15px 30px; /* Spacious button padding */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners for buttons */
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px; /* Space between buttons */
+    display: inline-block; /* Allow buttons to line up horizontally */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+}
+
+.home-section.call-to-action .cta-button:hover {
+    background-color: #f4a261; /* Change to a lighter color on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.home-section.call-to-action .cta-button:active {
+    background-color: #e76f51; /* Even darker color when button is pressed */
+    transform: translateY(0); /* Reset lift effect */
+}
+
+.home-section.call-to-action .cta-buttons-container {
+    display: flex; /* Use Flexbox to arrange buttons evenly */
+    justify-content: center; /* Center the buttons horizontally */
+    gap: 20px; /* Add space between the buttons */
+    flex-wrap: wrap; /* Allow the buttons to wrap on smaller screens */
+}
+
+
+/* Social Media Section Styles */
+.home-section.social-media {
+    background-color: #f2f2f2; /* Light Grey background */
+    padding: 60px 20px 40px; /* Add padding for space around content */
+    text-align: center; /* Center-align the content */
+    border-radius: 10px; /* Slightly rounded corners */
+    margin-top: 30px; /* Space above the social media section */
+}
+
+.home-section.social-media h2 {
+    font-size: 2.5rem; /* Larger text for title */
+    font-family: 'Host Grotesk', sans-serif;
+    font-weight: bold;
+    margin-bottom: 30px; /* Add space between title and buttons */
+    color: #333; /* Dark color for text */
+    width: 100%; /* Ensure title takes up full width */
+    text-align: center; /* Center-align the title */
+}
+
+.home-section.social-media .social-media-buttons-container {
+    display: flex; /* Flexbox to arrange buttons horizontally */
+    justify-content: center; /* Center the buttons */
+    gap: 20px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.home-section.social-media .social-media-button {
+    background-color: transparent; /* No background color for logo buttons */
+    border: none; /* Remove button borders */
+    padding: 15px; /* Space around the logo */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effects */
+}
+
+/* Social Media Button Styles */
+.home-section.social-media .social-media-button img {
+    width: 50px; /* Set a fixed width */
+    height: 50px; /* Set a fixed height */
+    max-width: 100%; /* Ensure the logo scales with available space */
+    max-height: 100%; /* Ensure the logo scales with available space */
+    transition: transform 0.3s; /* Smooth transition on hover */
+}
+
+/* Social Media Icons (Font Awesome) */
+.home-section.social-media .social-media-button i {
+    color: #000; /* Black color for the icons */
+    font-size: 50px; /* Set the desired size */
+    transition: transform 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Hover effect */
+.home-section.social-media .social-media-button:hover i {
+    transform: scale(1.1); /* Slight zoom-in effect */
+    color: #555; /* Change color on hover (dark gray) */
+}
