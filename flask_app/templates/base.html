@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='index.css') }}">
+    <meta charset="UTF-8">
+    <meta name="description" content="Nobu's Friends Cattery">
+    <meta name="keywords" content="cattery, maine, mainecoon, maine coon">
+    <meta name="author" content="Paul Jeleanu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Nobu's Friends Cattery - {{ page_name }} </title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/icon-modified.png') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Host+Grotesk:ital,wght@0,800;1,800&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="icon-image-homepage">
+                <a href="/"><img class="icon" src="/static/images/{{'icon.jpg'}}" alt="Logo"></a>
+            </div>
+            <div class="navigation-menu">
+                    <ul class="navbar-buttons-list">
+                        <li><a href="/"> Acasa </a></li>
+                        <li><a href="/despre"> Despre Noi </a></li>
+                        <li><a href="/cuiburi"> Cuiburi </a></li>
+                        <li><a href="/contact"> Contact </a></li>
+                    </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title-container">
+            <div class="page-title-section">
+                <h1 id="page-name">{{ page_name }}</h1>
+            </div>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <div class="footer">
+        <p class="footer-paragraph"> Copyright &copy; 2025 NOBU'S FRIENDS CATTERY  |  All Rights Reserved </p>
+    </div>
+
+</body>
+
+</html>
