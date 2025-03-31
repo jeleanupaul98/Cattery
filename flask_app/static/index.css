@@ -838,7 +838,8 @@ main {
 .contact-form-container label {
     display: block;
     font-size: 1em;
-    color: #333;
+    color: #555;
+    font-family: "Anton";
     margin-bottom: 5px;
 }
 
@@ -854,6 +855,7 @@ main {
 .contact-form-container button.cta-button {
     background-color: #00796B;
     color: white;
+    font-family: "Anton", "sans-serif";
     padding: 15px 30px;
     font-size: 1.2em;
     border: none;
@@ -888,6 +890,7 @@ main {
 .contact-info-container li {
     margin-bottom: 10px;
     font-size: 1.1em;
+    color: #555;
 }
 
 .contact-info-container strong {
