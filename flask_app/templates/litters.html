@@ -6,4 +6,91 @@
 <!-- cuiburile E si D -->
 
 <!-- poze cu parintii, poze cu copiii -->
+
+<!-- Available Litters Section -->
+<!-- Litter 1 Section -->
+<section class="litter-section">
+    <div class="litter-header">
+        <div class="parent-info">
+            <div class="parent mother">
+                <img src="{{ url_for('static', filename='images/fleur-de-lys.jpg') }}" alt="Fleur de Lys">
+                <h3>Mama: Fleur de Lys</h3>
+            </div>
+            <div class="parent father">
+                <img src="{{ url_for('static', filename='images/cronos.jpg') }}" alt="Cronos">
+                <h3>Tatăl: Cronos</h3>
+            </div>
+        </div>
+        <h2 class="litter-title">Cuibul E: Decembrie, 2025</h2>
+    </div>
+
+    <div class="kittens-gallery">
+        <h3>Puii disponibili: </h3>
+        <div class="kittens-grid">
+            <div class="kitten-card">
+                <img src="{{ url_for('static', filename='images/ekko.jpg') }}" alt="Ekko">
+                <p>Ekko</p>
+            </div>
+            <div class="kitten-card">
+                <img src="{{ url_for('static', filename='images/eros-nimbus.jpg') }}" alt="Eros-Nimbus">
+                <p>Eros Nimbus</p>
+            </div>
+            <div class="kitten-card">
+                <img src="{{ url_for('static', filename='images/enzo-furrari.jpg') }}" alt="Enzo-Furrari">
+                <p>Enzo Furrari</p>
+            </div>
+            <div class="kitten-card">
+                <img src="{{ url_for('static', filename='images/evita.jpg') }}" alt="Evita">
+                <p>Evita</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Litter 2 Section -->
+<section class="litter-section">
+    <div class="litter-header">
+        <div class="parent-info">
+            <div class="parent mother">
+                <img src="{{ url_for('static', filename='images/margot.jpg') }}" alt="Margot">
+                <h3>Mama: Margot</h3>
+            </div>
+            <div class="parent father">
+                <img src="{{ url_for('static', filename='images/armagedon.jpg') }}" alt="Armagedon">
+                <h3>Tatăl: Armagedon</h3>
+            </div>
+        </div>
+        <h2 class="litter-title">Cuibul D: August, 2024</h2>
+    </div>
+
+    <div class="kittens-gallery">
+        <h3>Kittens Available</h3>
+        <div class="kittens-grid">
+            <div class="kitten-card">
+                <img src="{{ url_for('static', filename='images/dante.jpg') }}" alt="Dante">
+                <p>Dante</p>
+            </div>
+            <div class="kitten-card">
+                <img src="{{ url_for('static', filename='images/dusty.jpg') }}" alt="Dusty">
+                <p>Dusty</p>
+            </div>
+            <div class="kitten-card">
+                <img src="{{ url_for('static', filename='images/daphne.jpg') }}" alt="Daphne">
+                <p>Daphne</p>
+            </div>
+            <div class="kitten-card">
+                <img src="{{ url_for('static', filename='images/daemon.jpg') }}" alt="Daemon">
+                <p>Daemon</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call-to-Action Section -->
+<section id="litter-cta">
+    <h2>Interesat de un pisoi din cuiburile noastre?</h2>
+    <p>Contactează-ne pentru mai multe detalii sau pentru a rezerva un pisoi din cuiburile noastre disponibile!</p>
+    <a href="/contact" class="litter-cta-button">Contactează-ne</a>
+</section>
+
 {% endblock %}
