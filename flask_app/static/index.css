@@ -17,35 +17,40 @@ body {
 /* Header Style */
 header {
     width: 100%;
-    padding: 20px;
+    padding-top: 10px; /* Reduces the space between the top of the page and the header */
+    padding-bottom: 20px; /* Optional - adjust to create a bit of space below the header */
     display: flex;
-    justify-content: space-between; /* Ensure space between logo and navigation */
-    align-items: center;
+    flex-direction: column; /* Stack logo and navbar vertically */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: center; /* Center content horizontally */
     background-color: white;
 }
 
 .header-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content inside header */
+    justify-content: flex-start; /* Keep the content at the top */
 }
 
 /* Logo Container */
 .icon-image-homepage {
-    flex-shrink: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
-    margin-right: 20px; /* Adds space between the logo and the nav bar */
+    margin-bottom: 20px; /* Adjust the space between logo and navbar */
 }
 
 .icon-image-homepage img {
-    width: 150px; /* Fixed logo size */
+    width: 200px; /* Fixed logo size */
     height: auto;
 }
 
 /* Navigation Menu */
 .navigation-menu {
     display: flex;
-    justify-content: flex-end; /* Aligns the navbar items to the right */
+    justify-content: center; /* Center the navbar items */
     width: 100%;
 }
 
@@ -55,11 +60,12 @@ header {
     justify-content: space-evenly; /* Evenly spaces out the navbar items */
     align-items: center;
     list-style-type: none;
-    width: 60%; /* Adjusts the navbar width */
+    width: 50%; /* Adjust the navbar width */
+    padding: 0;
 }
 
 .navbar-buttons-list li {
-    margin: 0 15px; /* Added more space between buttons */
+    margin: 0 15px; /* Space between navbar items */
 }
 
 /* Navigation Button Styling */
@@ -70,15 +76,14 @@ header {
     font-size: 23px;
     display: inline-block;
     border-radius: 5px;
-    transition: all 0.3s ease;  /* Smooth transition for hover effect */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Added shadow */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow */
 }
 
 .navbar-buttons-list li a:hover {
-    background-color: #f0f0f0;  /* Slightly darker background on hover */
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);  /* Darker shadow on hover */
+    background-color: #f0f0f0; /* Slightly darker background on hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
-
 
 /* Responsive Font Size */
 @media screen and (max-width: 1165px) {
@@ -448,4 +453,193 @@ main {
 .home-section.social-media .social-media-button:hover i {
     transform: scale(1.1); /* Slight zoom-in effect */
     color: #555; /* Change color on hover (dark gray) */
+}
+
+
+
+/* Stiluri specifice pentru pagina 'Despre Noi' */
+.about-us-page #about-us {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us-page #about-us h1 {
+    text-align: center;
+    font-size: 2.5em;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.about-us-page #about-us h2 {
+    font-size: 2em;
+    color: #00796B;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.about-us-page #about-us p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.about-us-page #our-values ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-us-page #our-values li {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    line-height: 1.7;
+    padding-left: 20px;
+    position: relative;
+    list-style-type: none;
+    color: #666;
+}
+
+.about-us-page #our-values li::before {
+    content: '\2022';
+    font-size: 1.5em;
+    color: #666;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.about-us-page .container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-us-page section {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-color: #ffffff;
+}
+
+.about-us-page a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.about-us-page a:hover {
+    color: #2c3e50;
+}
+
+@media (max-width: 768px) {
+    .about-us-page #about-us h1 {
+        font-size: 2em;
+    }
+
+    .about-us-page #about-us h2 {
+        font-size: 1.5em;
+    }
+
+    .about-us-page #about-us p, .about-us-page #our-values li {
+        font-size: 1em;
+    }
+}
+
+
+/* Specific styling for the About Us page Call to Action */
+.about-us-cta {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 8px; /* Slight rounded corners for a soft feel */
+}
+
+.about-us-cta-container h2 {
+    font-size: 2rem;
+    color: #00796B; /* Dark grey for the heading */
+    margin-bottom: 15px;
+}
+
+.about-us-cta-container p {
+    font-size: 1rem;
+    color: #666; /* Medium grey for the text for softer contrast */
+    margin-bottom: 20px;
+}
+
+.about-us-cta-button {
+    background-color: #4A4A4A; /* Dark grey for the button */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+    border: 2px solid transparent; /* Adds a subtle border */
+}
+
+.about-us-cta-button:hover {
+    background-color: #333; /* Darker grey when hovered */
+    border-color: #ffffff; /* White border on hover for contrast */
+}
+
+/* Styling for the Who We Are section */
+#who-we-are {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px; /* Padding for spacing */
+    border-radius: 8px; /* Optional rounded corners */
+    text-align: center;
+}
+
+#who-we-are h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image Container */
+.who-we-are-image-container {
+    display: flex;
+    justify-content: space-between; /* Ensures the images are spaced out */
+    gap: 20px; /* Adds spacing between the images */
+    flex-wrap: wrap; /* Allows the images to wrap on smaller screens */
+    margin-bottom: 30px; /* Adds space below the images */
+    align-items: center; /* Ensures images align in the center */
+    max-width: 100%;
+    justify-content: center;
+}
+
+.who-we-are-text {
+    color: #666;
+}
+
+/* Styling for individual images */
+.who-we-are-img {
+    max-width: 45%; /* Ensures the images don't overflow the container */
+    height: auto;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s ease;
+    filter: brightness(0.9); /* Slight dimming effect */
+}
+
+/* Hover effect for images */
+.who-we-are-img:hover {
+    transform: scale(1.05); /* Slight zoom effect */
+    filter: brightness(1); /* Restore brightness */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .who-we-are-image-container {
+        flex-direction: column; /* Stack the images vertically on smaller screens */
+        align-items: center;
+    }
+
+    .who-we-are-img {
+        max-width: 90%; /* Make images larger on mobile */
+        margin-bottom: 20px; /* Adds space between stacked images */
+    }
 }

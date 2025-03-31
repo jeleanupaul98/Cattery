@@ -3,4 +3,55 @@
 
 {% block content %}
 
+<section id="about-us">
+    <div class="container">
+
+        <section id="who-we-are">
+            <h2>Cine suntem noi?</h2>
+            <div class="who-we-are-content">
+                <!-- Image Section -->
+                <div class="who-we-are-image-container">
+                    <img class="who-we-are-img" 
+                         src="{{ url_for('static', filename='images/poza-concurs-sofisticat-bogdan-alexandra.jpg') }}" 
+                         alt="Nobu's Friends at Sofisticat">
+                    <img class="who-we-are-img" 
+                         src="{{ url_for('static', filename='images/poza-concurs-alexandra-margot.jpg') }}" 
+                         alt="Alexandra si Margot">
+                </div>
+        
+                <!-- Text Section -->
+                <div class="who-we-are-text">
+                    <p>Suntem <strong>Nobu's Friends Cattery</strong>, o crescătorie dedicată creșterii și selecției pisicilor <strong>Maine Coon</strong>, situată în comuna Nicolae Bălcescu, județul Bacău. La noi, fiecare pisică este crescută cu multă grijă, dragoste și respect, pentru a deveni un companion de încredere și deosebit pentru viitorii săi stăpâni. Ne concentrăm pe furnizarea de pisici <strong>Maine Coon</strong> sănătoase, cu pedigree de calitate, care să aducă bucurie și armonie în casele celor care le adoptă.</p>
+                    <p>Scopul nostru este să oferim nu doar o pisică, ci un prieten loial și iubitor, care să fie alături de familie pe termen lung. Prin intermediul site-ului nostru, dorim să facem cunoscută calitatea și profesionalismul serviciilor noastre, oferind un canal de comunicare transparent și direct pentru toți cei interesați să înființeze o relație de încredere cu <strong>Nobu's Friends Cattery</strong>.</p>
+                </div>
+                <div class="who-we-are-image-container">
+                    <img class="who-we-are-img" 
+                         src="{{ url_for('static', filename='images/poza-concurs-sofisticat-alexandra-carucior.jpg') }}" 
+                         alt="Alexandra si Armageddon">
+                    <img class="who-we-are-img" 
+                         src="{{ url_for('static', filename='images/poza-safari-nobu.jpg') }}" 
+                         alt="Nobu si prietenii">
+                </div>
+            </div>
+        </section>
+
+        <section id="our-values">
+            <h2>Care sunt valorile noastre?</h2>
+            <ul>
+                <li><strong>Calitate și sănătate:</strong> Fiecare pisică <strong>Maine Coon</strong> din crescătoria noastră beneficiază de îngrijire veterinară de calitate și o alimentație sănătoasă, pentru a fi pregătită să își găsească un stăpân iubitor. Ne asigurăm că toate animalele noastre sunt în perfectă stare de sănătate și că provin din părinți cu pedigree verificate.</li>
+                <li><strong>Profesionalism:</strong> Echipa noastră este formată din experți în creșterea și îngrijirea pisicilor <strong>Maine Coon</strong>, iar procesul nostru de selecție este riguros și responsabil. Fiecare pisică este crescută într-un mediu curat, sigur și prietenos.</li>
+                <li><strong>Relație pe termen lung:</strong> Ne dorim ca toți clienții noștri să găsească la <strong>Nobu's Friends Cattery</strong> nu doar o pisică, ci un companion de încredere. Suntem mereu disponibili pentru orice întrebări sau recomandări, chiar și după ce pisica ajunge în noul său cămin.</li>
+                <li><strong>Transparență și încredere:</strong> Fiecare client poate conta pe noi pentru un serviciu transparent și de calitate. Răspundem prompt la întrebările clienților și oferim toate informațiile necesare despre istoricul și starea de sănătate a fiecărei pisici. Suntem deschiși și sinceri în fiecare etapă a procesului de vânzare.</li>
+            </ul>
+        </section>
+    </div>
+</section>
+
+<section id="about-us-cta">
+    <div class="about-us-cta-container">
+        <h2>Ești gata să primești în casa ta un Maine Coon?</h2>
+        <p>Acum că ai aflat mai multe despre noi și despre angajamentul nostru față de pisicile Maine Coon sănătoase și fericite, ne-ar plăcea să te ajutăm să îți găsești noul prieten felin. Fie că vrei mai multe informații despre procesul nostru de creștere, pisicile disponibile sau pur și simplu vrei să discutăm despre această rasă minunată, suntem aici să te ajutăm în fiecare pas al călătoriei tale!</p>
+        <a href="/contact" class="about-us-cta-button">Contactează-ne pentru mai multe informații</a>
+    </div>
+</section>
 {% endblock %}
